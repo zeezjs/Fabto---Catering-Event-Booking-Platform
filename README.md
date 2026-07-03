@@ -1,5 +1,4 @@
 # Fabto---Catering-Event-Booking-Platform
-# 🍽️ EventBite - Catering & Event Booking Platform
 
 [![Built with Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple?logo=bootstrap)](https://getbootstrap.com/)
 [![Built with Firebase](https://img.shields.io/badge/Firebase-10.12-orange?logo=firebase)](https://firebase.google.com/)

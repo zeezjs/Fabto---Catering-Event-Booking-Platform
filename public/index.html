@@ -8,89 +8,96 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/landing.css">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
  
-<!-- ============ NAV ============ -->
-<header class="nav" id="siteNav">
-  <div class="nav-inner">
+<!-- Navbar -->
+ 
+<header class="" id="siteNav">
+  <nav class="nav navbar-expand-lg fixed-top nav-inner">
     <a href="#top" class="logo">FAB<span>TO</span></a>
-    <nav class="nav-links">
-      <a href="#about">About us</a>
-      <a href="#services">Services</a>
-      <a href="#menu">Menu</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact us</a>
-    </nav>
-    <div class="nav-right">
-      <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobilePanel">
-        <span></span><span></span><span></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 nav-links">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact us</a>
+        </li>
+      </ul>
     </div>
-  </div>
-  <div class="mobile-panel" id="mobilePanel">
-    <ul>
-      <li><a href="#about">About us</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact us</a></li>
-      <li><a href="booking.html" class="btn btn-primary">Book Now</a></li>
-    </ul>
-  </div>
+    <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+  </nav>
 </header>
  
-<!-- ============ HERO ============ -->
+<!--HERO-->
 <section class="hero" id="top">
   <div class="hero-inner">
     <h1>Bringing Families, Friends, and Celebrations Together.</h1>
     <p>Whether it's a wedding, birthday, corporate event, or special occasion, Fabto takes care of the planning and catering so you can focus on making memories.</p>
     <div class="hero-cta">
       <a href="#services" class="btn btn-gold">Our Services</a>
-      <a href="#contact" class="btn btn-outline">Get Started</a>
+      <a href="booking.html" class="btn btn-outline">Book Now</a>
     </div>
   </div>
 </section>
  
-<!-- ============ ABOUT ============ -->
+<!--ABOUT-->
 <section class="about" id="about">
-  <div class="about-media">
-    <div class="about-media-main">
-      <img src="https://picsum.photos/seed/fabto-friends/700/860" alt="Friends sharing a meal and laughing together at a Fabto-catered gathering" loading="lazy">
-    </div>
-    <div class="about-thumbs">
-      <img src="https://picsum.photos/seed/fabto-serve/360/260" alt="Fabto staff serving food at an event" loading="lazy">
-      <img src="https://picsum.photos/seed/fabto-lights/360/260" alt="String lights over an evening celebration set up by Fabto" loading="lazy">
-    </div>
-  </div>
-  <div class="about-copy reveal">
-    <p class="eyebrow">About Fabto</p>
-    <h2 class="heading-lg">Making Every Celebration Feel Like home</h2>
-    <p class="lede">At Fabto, we believe every celebration deserves thoughtful planning, delicious food, and genuine hospitality. From intimate family gatherings and weddings to corporate events, we create memorable experiences that bring people together.</p>
-    <div class="about-features">
-      <div class="feature-card">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 3-4 5-4 8a4 4 0 0 0 8 0c0-3-1-5-4-8Z"/><path d="M8.5 15a6 6 0 0 0 7 0"/><path d="M4 21h16"/></svg></div>
-        <h4>Exceptional Catering</h4>
-        <p>Fresh, delicious meals prepared with care</p>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-5 col-12 about-media">
+            <div class=" about-media-main">
+                <img src=" https://plus.unsplash.com/premium_photo-1739754519555-5183ad57d685?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmlnZXJpYW4lMjBmcmllbmRzLXNoYXJpbmctbWVhbCUyMGF0JTIwYSUyMGdhdGhlcmluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Friends sharing a meal and laughing together at a Fabto-catered gathering" loading="lazy">
+            </div>
+            <div class=" about-thumbs">
+              <img src="https://images.unsplash.com/photo-1660675133530-05d912b16cb1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmlnZXJpYW4lMjBjYXRlcmluZyUyMHN0YWZmJTIwc2VydmluZyUyMGF0JTIwYW4lMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D" alt="Fabto staff serving food at an event" loading="lazy">
+              <img src="https://plus.unsplash.com/premium_photo-1664790560108-68d81ca35c0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3RyaW5nJTIwbGlnaHRzJTIwcGFydHl8ZW58MHx8MHx8fDA%3D" alt="String lights over an evening celebration set up by Fabto" loading="lazy">
+            </div>
+        </div>
+        <div class="col-lg-7 col-12 mt-lg-5">
+          <div class="about-copy reveal">
+            <p class="eyebrow">About Fabto</p>
+            <h2 class="heading-lg">Making Every Celebration Feel Like home</h2>
+            <p class="lede">At Fabto, we believe every celebration deserves thoughtful planning, delicious food, and genuine hospitality. From intimate family gatherings and weddings to corporate events, we create memorable experiences that bring people together.</p>
+          </div>
+          <div class="about-features">
+              <div class="feature-card">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 3-4 5-4 8a4 4 0 0 0 8 0c0-3-1-5-4-8Z"/><path d="M8.5 15a6 6 0 0 0 7 0"/><path d="M4 21h16"/></svg></div>
+                <h4>Exceptional Catering</h4>
+                <p>Fresh, delicious meals prepared with care</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c1-4 4-6 9-6s8 2 9 6"/><circle cx="12" cy="7" r="4"/></svg></div>
+                <h4>Event Planning</h4>
+                <p>Seamless planning from idea to celebration</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 5 2 9l10 4 10-4Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></div>
+                <h4>Training &amp; Mentorship</h4>
+                <p>Empowering aspiring caterers and event planners</p>
+              </div>
+          </div>
+        </div>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c1-4 4-6 9-6s8 2 9 6"/><circle cx="12" cy="7" r="4"/></svg></div>
-        <h4>Event Planning</h4>
-        <p>Seamless planning from idea to celebration</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 5 2 9l10 4 10-4Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></div>
-        <h4>Training &amp; Mentorship</h4>
-        <p>Empowering aspiring caterers and event planners</p>
-      </div>
-    </div>
   </div>
 </section>
  
-<!-- ============ GIVING BACK ============ -->
+<!--GIVING BACK-->
 <section class="giving section-pad">
   <div class="container giving-inner">
     <div class="giving-copy reveal">
@@ -99,13 +106,13 @@
       <a href="#contact" class="btn btn-primary">Learn More &#8594;</a>
     </div>
     <div class="giving-media reveal">
-      <img class="g1" src="https://picsum.photos/seed/fabto-iftar1/500/380" alt="Volunteers preparing food packages for community outreach" loading="lazy">
-      <img class="g2" src="https://picsum.photos/seed/fabto-iftar2/520/520" alt="Families sharing an evening meal at a community iftar" loading="lazy">
+      <img class="g1" src="https://images.unsplash.com/photo-1694286068611-d0c24cbc2cd5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmlnZXJpYW4lMjBmb29kLWRvbmF0aW9uLXZvbHVudGVlcnN8ZW58MHx8MHx8fDA%3D" alt="Volunteers preparing food packages for community outreach" loading="lazy">
+      <img class="g2" src=" https://images.unsplash.com/photo-1639664342827-2d68822c55c9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TmlnZXJpYW4lMjBpZnRhciUyMGdhdGhlcmluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Families sharing an evening meal at a community iftar" loading="lazy">
     </div>
   </div>
 </section>
  
-<!-- ============ SERVICES ============ -->
+<!--SERVICES-->
 <section class="services section-pad" id="services">
   <div class="container">
     <div class="services-head reveal">
@@ -133,7 +140,7 @@
  
     <div class="service-grid">
       <div class="service-card reveal">
-        <img src="https://picsum.photos/seed/fabto-wedding/500/620" alt="Elegant wedding reception set up under string lights" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1707333514312-39cf7658479c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RWxlZ2FudCUyMHdlZGRpbmclMjByZWNlcHRpb258ZW58MHx8MHx8fDA%3D" alt="Elegant wedding reception set up under string lights" loading="lazy">
         <div class="service-card-body">
           <h4>Wedding Celebrations</h4>
           <p>Elegant planning and catering for your unforgettable day.</p>
@@ -141,7 +148,7 @@
         </div>
       </div>
       <div class="service-card reveal">
-        <img src="https://picsum.photos/seed/fabto-corporate/500/620" alt="Corporate event with catered dining under a chandelier" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1753412181070-2dca2db39d0a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fENvcnBvcmF0ZSUyMGV2ZW50JTIwd2l0aCUyMGNhdGVyZWQlMjBkaW5pbmclMjB1bmRlciUyMGElMjBjaGFuZGVsaWVyfGVufDB8fDB8fHww" alt="Corporate event with catered dining under a chandelier" loading="lazy">
         <div class="service-card-body">
           <h4>Corporate Events</h4>
           <p>Professional catering and seamless event coordination.</p>
@@ -149,7 +156,7 @@
         </div>
       </div>
       <div class="service-card reveal">
-        <img src="https://picsum.photos/seed/fabto-birthday/500/620" alt="Birthday party with gold balloons and celebration decor" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1748551204321-845c277c1dba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JTIyQmlydGhkYXklMjBwYXJ0eSUyMHdpdGglMjBnb2xkJTIwYmFsbG9vbnMlMjBhbmQlMjBjZWxlYnJhdGlvbiUyMGRlY29yfGVufDB8fDB8fHww" alt="Birthday party with gold balloons and celebration decor" loading="lazy">
         <div class="service-card-body">
           <h4>Birthday Parties</h4>
           <p>Celebrate with great food, beautiful decor, and joyful moments.</p>
@@ -157,7 +164,7 @@
         </div>
       </div>
       <div class="service-card reveal">
-        <img src="https://picsum.photos/seed/fabto-catering/500/620" alt="Trays of freshly prepared catering food" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1623475173140-ad2f0369ca92?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VHJheXMlMjBvZiUyMGZyZXNobHklMjBwcmVwYXJlZCUyMGNhdGVyaW5nJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D" alt="Trays of freshly prepared catering food" loading="lazy">
         <div class="service-card-body">
           <h4>Catering Services</h4>
           <p>Delicious meals, pastries, and desserts for every occasion.</p>
@@ -168,16 +175,16 @@
   </div>
 </section>
  
-<!-- ============ GALLERY STRIP ============ -->
+<!--GALLERY STRIP-->
 <section class="strip">
-  <img src="https://picsum.photos/seed/fabto-bread/400/400" alt="Freshly baked bread" loading="lazy">
-  <img src="https://picsum.photos/seed/fabto-rice/400/400" alt="A plate of jollof rice and fried chicken" loading="lazy">
-  <img src="https://picsum.photos/seed/fabto-cake/400/400" alt="Birthday cake with lit candles" loading="lazy">
-  <img src="https://picsum.photos/seed/fabto-trays/400/400" alt="Catering trays of prepared food" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1599819055803-717bba43890f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RnJlc2hseSUyMGJha2VkJTIwYnJlYWR8ZW58MHx8MHx8fDA%3D" alt="Freshly baked bread" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1603496987674-79600a000f55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Sm9sbG9mJTIwcmljZSUyMGFuZCUyMGNoaWNrZW58ZW58MHx8MHx8fDA%3D" alt="A plate of jollof rice and fried chicken" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlydGhkYXklMjBjYWtlfGVufDB8fDB8fHww" alt="Birthday cake with lit candles" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1709549774125-1a3e32541201?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Q2F0ZXJpbmclMjB0cmF5cyUyMG9mJTIwcHJlcGFyZWQlMjBuaWdlcmlhbiUyMGZvb2R8ZW58MHx8MHx8fDA%3D" alt="Catering trays of prepared food" loading="lazy">
 </section>
 <div class="scallop scallop-to-gold"></div>
  
-<!-- ============ MENU (NEW) ============ -->
+<!--MENU (NEW)-->
 <section class="menu section-pad" id="menu">
   <div class="container">
     <div class="menu-head reveal">
@@ -269,7 +276,7 @@
   </div>
 </section>
  
-<!-- ============ TESTIMONIALS (NEW) ============ -->
+<!--TESTIMONIALS (NEW)-->
 <section class="testimonials section-pad" id="testimonials">
   <div class="container">
     <div class="testi-head reveal">
@@ -346,7 +353,7 @@
   </div>
 </section>
  
-<!-- ============ CONTACT (NEW) ============ -->
+<!--CONTACT (NEW)-->
 <section class="contact section-pad" id="contact">
   <div class="container contact-inner">
     <div class="contact-info reveal">
@@ -415,7 +422,7 @@
   </div>
 </section>
  
-<!-- ============ FOOTER (NEW) ============ -->
+<!--FOOTER (NEW)-->
 <footer class="footer">
   <div class="container footer-top">
     <div class="footer-brand">
@@ -424,7 +431,7 @@
       <div class="social-row">
         <a href="#" aria-label="Fabto on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg></a>
         <a href="#" aria-label="Fabto on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 8h2V4h-2a4 4 0 0 0-4 4v2H9v4h2v6h4v-6h2.5l.5-4H15V8Z"/></svg></a>
-        <a href="#" aria-label="Fabto on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.4-4.2A8 8 0 1 1 8 19.5L3 21Z"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6"/></svg></a>
+        <a href="https://wa.me/+2348060675970" aria-label="Fabto on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.4-4.2A8 8 0 1 1 8 19.5L3 21Z"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6"/></svg></a>
       </div>
     </div>
     <div>

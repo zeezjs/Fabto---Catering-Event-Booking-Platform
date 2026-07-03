@@ -1,14 +1,14 @@
-// ============ INITIALIZATION ============
+// INITIALIZATION
 document.addEventListener('DOMContentLoaded', () => {
   initializeYear();
   initializeStickyNav();
-  initializeMobileNav();
+  // initializeMobileNav();
   initializeMenuTabs();
   initializeContactForm();
   initializeScrollReveal();
 });
 
-// ============ YEAR IN FOOTER ============
+// YEAR IN FOOTER
 function initializeYear() {
   const yearElement = document.getElementById('year');
   if (yearElement) {
@@ -16,7 +16,7 @@ function initializeYear() {
   }
 }
 
-// ============ STICKY NAV SHADOW ON SCROLL ============
+// STICKY NAV SHADOW ON SCROLL
 function initializeStickyNav() {
   const nav = document.getElementById('siteNav');
   if (!nav) return;
@@ -26,28 +26,28 @@ function initializeStickyNav() {
   }, { passive: true });
 }
 
-// ============ MOBILE NAV TOGGLE ============
-function initializeMobileNav() {
-  const navToggle = document.getElementById('navToggle');
-  const mobilePanel = document.getElementById('mobilePanel');
+// MOBILE NAV TOGGLE
+// function initializeMobileNav() {
+//   const navToggle = document.getElementById('navToggle');
+//   const mobilePanel = document.getElementById('mobilePanel');
 
-  if (!navToggle || !mobilePanel) return;
+//   if (!navToggle || !mobilePanel) return;
 
-  navToggle.addEventListener('click', () => {
-    const open = mobilePanel.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', open);
-  });
+//   navToggle.addEventListener('click', () => {
+//     const open = mobilePanel.classList.toggle('open');
+//     navToggle.setAttribute('aria-expanded', open);
+//   });
 
-  // Close mobile panel when a link is clicked
-  mobilePanel.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      mobilePanel.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-}
+//   // Close mobile panel when a link is clicked
+//   mobilePanel.querySelectorAll('a').forEach(a => {
+//     a.addEventListener('click', () => {
+//       mobilePanel.classList.remove('open');
+//       navToggle.setAttribute('aria-expanded', 'false');
+//     });
+//   });
+// }
 
-// ============ MENU TABS ============
+// MENU TABS
 function initializeMenuTabs() {
   const tabs = document.querySelectorAll('.menu-tab');
   const panels = document.querySelectorAll('.menu-panel');
@@ -76,7 +76,7 @@ function initializeMenuTabs() {
   });
 }
 
-// ============ CONTACT FORM ============
+// CONTACT FORM
 function initializeContactForm() {
   const form = document.getElementById('contactForm');
   const success = document.getElementById('formSuccess');
@@ -102,7 +102,7 @@ function initializeContactForm() {
   });
 }
 
-// ============ SCROLL REVEAL ANIMATION ============
+// SCROLL REVEAL ANIMATION
 function initializeScrollReveal() {
   const revealEls = document.querySelectorAll('.reveal');
 

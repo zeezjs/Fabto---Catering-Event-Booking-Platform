@@ -1,0 +1,143 @@
+.brand-panel {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(205,158,88,0.18), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(205,158,88,0.12), transparent 50%),
+    var(--rust-900);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4.5rem 3rem;
+  min-height: 100vh;
+}
+
+.brand-panel .logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.brand-panel .logo span {
+  color: var(--gold-soft);
+}
+
+.brand-copy h1 {
+  color: var(--white);
+  font-size: clamp(2.1rem, 3vw, 3rem);
+  margin-bottom: 1rem;
+  max-width: 18ch;
+}
+
+.brand-copy p {
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 44ch;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.brand-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.brand-point {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.brand-point-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-point-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--gold-soft);
+}
+
+.brand-point span {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.5;
+}
+
+.footnote {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.form-panel {
+  background: var(--cream);
+}
+
+.login-card {
+  max-width: 520px;
+}
+
+.back-link {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--rust);
+}
+
+.form-control {
+  border: 1.5px solid var(--line) !important;
+  border-radius: 14px !important;
+  padding: 14px 16px !important;
+  background: var(--white) !important;
+  color: var(--ink) !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: var(--terracotta) !important;
+  box-shadow: 0 0 0 4px rgba(139, 66, 34, 0.12) !important;
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--terracotta);
+}
+
+.forgot-link {
+  color: var(--terracotta);
+  font-weight: 600;
+}
+
+.forgot-link:hover {
+  color: var(--terracotta-dark);
+}
+
+.login-footnote {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 991px) {
+  .brand-panel {
+    display: none;
+  }
+
+  .form-panel {
+    min-height: 100vh;
+  }
+}

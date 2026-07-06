@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login — Fabto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/admin-login.css">
+</head>
+<body>
+  <div class="container-fluid px-0">
+    <div class="row gx-0 min-vh-100">
+      <aside class="col-lg-6 d-none d-lg-flex brand-panel flex-column justify-content-between">
+        <div>
+          <div class="logo">FAB<span>TO</span></div>
+          <div class="brand-copy mt-4">
+            <h1>Manage every booking in one place.</h1>
+            <p>Sign in to review requests, confirm dates, and keep track of every celebration Fabto is hosting.</p>
+            <div class="brand-points">
+              <div class="brand-point">
+                <div class="brand-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4M16 3v4"/></svg></div>
+                <span>See every booking request as it comes in</span>
+              </div>
+              <div class="brand-point">
+                <div class="brand-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+                <span>Confirm availability and update status at a glance</span>
+              </div>
+              <div class="brand-point">
+                <div class="brand-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+                <span>Keep internal notes on every client and event</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footnote">&copy; 2026 Fabto Events &amp; Catering</div>
+      </aside>
+
+      <main class="col-12 col-lg-6 d-flex align-items-center justify-content-center form-panel">
+        <div class="login-card w-100 px-4 py-5">
+          <a href="index.html" class="back-link d-inline-flex align-items-center gap-2 mb-4">
+            <svg viewBox="0 0 24 24" fill="solid" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            Back to site
+          </a>
+          <h2 class="mb-3">Admin Login</h2>
+          <p class="sub mb-4">Sign in to manage your bookings.</p>
+
+          <form>
+            <div class="mb-4">
+              <label for="lg-email" class="form-label">Email address</label>
+              <input type="email" id="lg-email" name="email" class="form-control" placeholder="you@fabtoevents.ng" required>
+            </div>
+            <div class="mb-4">
+              <label for="lg-password" class="form-label">Password</label>
+              <input type="password" id="lg-password" name="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 mb-4">
+              <label class="form-check mb-0">
+                <input class="form-check-input" type="checkbox">
+                <span class="form-check-label">Remember me</span>
+              </label>
+              <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+          </form>
+          <p class="login-footnote mt-4 text-center">This dashboard is for Fabto staff only.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+
+  <script src="js/config.js"></script>
+  <script src="js/firebase-init.js"></script>
+</body>
+</html>

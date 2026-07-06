@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Event — Fabto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+  <header class="" id="siteNav">
+  <nav class="nav navbar-expand-lg fixed-top nav-inner">
+    <a href="#top" class="logo">FAB<span>TO</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 nav-links">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact us</a>
+        </li>
+      </ul>
+    </div>
+    <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+  </nav>
+  </header>
+
+  <section class="banner">
+    <div class="container text-center">
+      <p class="eyebrow">Booking</p>
+      <h1 class="heading-lg">Let's Bring Your Celebration to Life</h1>
+      <p class="lede mx-auto">Tell us about your event and we'll get back to you within 24 hours with availability and a custom quote.</p>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 steps">
+        <div class="col">
+          <div class="step-card h-100">
+            <div class="step-num">1</div>
+            <h4>Submit your request</h4>
+            <p>Share your event details and preferences below — it only takes a couple of minutes.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="step-card h-100">
+            <div class="step-num">2</div>
+            <h4>We check availability</h4>
+            <p>We confirm your date is open and put together a custom quote based on your needs.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="step-card h-100">
+            <div class="step-num">3</div>
+            <h4>We lock in your date</h4>
+            <p>Once details are confirmed, your event is booked and the planning begins.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="booking-form">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <div class="form-card">
+            <form class="form">
+              <div class="form-section">
+                <h3>Your Details</h3>
+                <p class="hint">So we know who we're planning with.</p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="bk-name">Full name</label>
+                    <input type="text" id="bk-name" name="name" class="form-control" placeholder="Your name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="bk-email">Email address</label>
+                    <input type="email" id="bk-email" name="email" class="form-control" placeholder="you@email.com" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="bk-phone">Phone number</label>
+                    <input type="tel" id="bk-phone" name="phone" class="form-control" placeholder="+234" required>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="divider">
+
+              <div class="form-section">
+                <h3>Event Details</h3>
+                <p class="hint">The basics of what you're planning.</p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="bk-type">Event type</label>
+                    <select id="bk-type" name="eventType" class="form-select" required>
+                      <option value="" selected disabled>Select event type</option>
+                      <option value="wedding">Wedding Celebration</option>
+                      <option value="corporate">Corporate Event</option>
+                      <option value="birthday">Birthday Party</option>
+                      <option value="catering">Catering Only</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="bk-date">Event date</label>
+                    <input type="date" id="bk-date" name="eventDate" class="form-control" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="bk-guests">Estimated guest count</label>
+                    <input type="number" id="bk-guests" name="guestCount" class="form-control" placeholder="e.g. 150" min="1" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="bk-venue">Event location / venue</label>
+                    <input type="text" id="bk-venue" name="venue" class="form-control" placeholder="e.g. Landmark Event Centre, Lagos" required>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="divider">
+
+              <div class="form-section">
+                <h3>Tell Us More</h3>
+                <p class="hint">Optional details that help us prepare a better quote.</p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="bk-package">Preferred package <span class="optional">(optional)</span></label>
+                    <select id="bk-package" name="package" class="form-select">
+                      <option value="" selected>Not sure yet — help me choose</option>
+                      <option value="small-chops">Small Chops &amp; Starters</option>
+                      <option value="rice-swallow">Rice &amp; Swallow</option>
+                      <option value="mains-grills">Mains &amp; Grills</option>
+                      <option value="full-spread">Full Spread (all categories)</option>
+                      <option value="pastries-only">Pastries &amp; Desserts Only</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="bk-budget">Budget range <span class="optional">(optional)</span></label>
+                    <select id="bk-budget" name="budget" class="form-select">
+                      <option value="" selected>Prefer not to say</option>
+                      <option value="100-300k">₦100,000 – ₦300,000</option>
+                      <option value="300-600k">₦300,000 – ₦600,000</option>
+                      <option value="600k-1m">₦600,000 – ₦1,000,000</option>
+                      <option value="1m-plus">₦1,000,000+</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="bk-notes">Additional notes <span class="optional">(optional)</span></label>
+                    <textarea id="bk-notes" name="notes" class="form-control" placeholder="Dietary restrictions, theme, colors, anything else we should know..." rows="5"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-footer text-center">
+                <button type="submit" class="btn btn-primary btn-lg w-100 submit-btn">Request Booking &#8594;</button>
+                <p class="form-note">This submits a request, not a confirmed booking. We'll follow up by email or phone to confirm availability and finalize details.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">FAB<span>TO</span></a>
+            <p>Bringing families, friends, and celebrations together — one well-planned, well-fed event at a time.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5>Quick Links</h5>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#menu">Menu</a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5>Services</h5>
+          <div class="footer-links">
+            <a href="index.html#services">Wedding Celebrations</a>
+            <a href="index.html#services">Corporate Events</a>
+            <a href="index.html#services">Birthday Parties</a>
+            <a href="index.html#services">Catering Services</a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h5>Get in Touch</h5>
+          <div class="footer-contact">
+            <span>hello@fabtoevents.ng</span>
+            <span>+234 810 000 0000</span>
+            <span>Lekki, Lagos, Nigeria</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span>&copy; 2026 Fabto Events &amp; Catering. All rights reserved.</span>
+        <span>Made with care in Lagos · <a href="admin-login.html">Staff Login</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+
+  <script src="js/config.js"></script>
+  <script src="js/firebase-init.js"></script>
+
+  <script src="js/booking.js"></script>
+</body>
+</html>

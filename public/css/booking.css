@@ -1,0 +1,195 @@
+/* Booking page custom styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.banner {
+  text-align: center;
+  padding: 5rem 0 2.5rem;
+}
+
+.banner .eyebrow {
+  justify-content: center;
+}
+
+.banner .lede {
+  max-width: 56ch;
+  margin: 0 auto;
+  color: var(--muted);
+}
+
+.steps {
+  margin-top: 2.5rem;
+}
+
+.step-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  min-height: 100%;
+}
+
+.step-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--terracotta);
+  background: var(--gold-pale);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.step-card h4 {
+  margin-bottom: 0.75rem;
+}
+
+.step-card p {
+  color: var(--muted);
+}
+
+.section-pad {
+  padding: 4.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-pad {
+    padding: 3.25rem 0;
+  }
+}
+
+.form-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(92, 48, 24, 0.08);
+  padding: 2.5rem;
+}
+
+.form-section:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.form-section h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-control,
+.form-select {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--cream);
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  box-shadow: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--terracotta);
+  box-shadow: none;
+  outline: 3px solid rgba(139, 66, 34, 0.18);
+}
+
+.form-control::placeholder {
+  color: var(--muted);
+}
+
+.form-select {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235C3018' stroke-width='2'><path d='m6 9 6 6 6-6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem auto;
+  padding-right: 2.5rem;
+}
+
+hr.divider {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2rem 0;
+}
+
+.form-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.footer {
+  background: var(--rust-900);
+  color: rgba(255, 255, 255, 0.82);
+  margin-top: 4.5rem;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.footer-top {
+  padding: 4rem 0 3rem;
+}
+
+.footer-brand .logo {
+  color: var(--white);
+}
+
+.footer-brand .logo span {
+  color: var(--gold-soft);
+}
+
+.footer-brand p {
+  margin-top: 1rem;
+  max-width: 34ch;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer h5 {
+  color: var(--gold-soft);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1.5rem 0;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.footer-bottom a:hover {
+  color: var(--gold-soft);
+}

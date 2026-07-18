@@ -26,27 +26,6 @@ function initializeStickyNav() {
   }, { passive: true });
 }
 
-// MOBILE NAV TOGGLE
-// function initializeMobileNav() {
-//   const navToggle = document.getElementById('navToggle');
-//   const mobilePanel = document.getElementById('mobilePanel');
-
-//   if (!navToggle || !mobilePanel) return;
-
-//   navToggle.addEventListener('click', () => {
-//     const open = mobilePanel.classList.toggle('open');
-//     navToggle.setAttribute('aria-expanded', open);
-//   });
-
-//   // Close mobile panel when a link is clicked
-//   mobilePanel.querySelectorAll('a').forEach(a => {
-//     a.addEventListener('click', () => {
-//       mobilePanel.classList.remove('open');
-//       navToggle.setAttribute('aria-expanded', 'false');
-//     });
-//   });
-// }
-
 // MENU TABS
 function initializeMenuTabs() {
   const tabs = document.querySelectorAll('.menu-tab');

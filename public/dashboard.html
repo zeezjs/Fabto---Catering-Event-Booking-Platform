@@ -37,9 +37,6 @@
                 <strong>Fabto Admin</strong>
                 <span>hello@fabtoevents.ng</span>
             </div>
-            <!-- <a href="admin-login.html" class="sidebar-logout" aria-label="Log out">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><path d="M16 17l5-5-5-5"></path><path d="M21 12H9"></path></svg>
-            </a> -->
           </div>
         </aside>
                             <!-- Main Section -->
@@ -68,7 +65,7 @@
                                     <div class="card-title stat-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
                                     </div>          
-                                    <p class="card-text">48</p>
+                                    <p class="card-text" id="totalBookingsCount">0</p>
                                     <p class="card-text-small">Total bookings</p>
                                 </div>
                             </div>
@@ -79,7 +76,7 @@
                                     <div class="card-title stat-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
                                     </div>          
-                                    <p class="card-text">12</p>
+                                    <p class="card-text" id="pendingBookingsCount">0</p>
                                     <p class="card-text-small">Pending review</p>
                                 </div>
                             </div>
@@ -90,7 +87,7 @@
                                     <div class="card-title stat-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
                                     </div>          
-                                    <p class="card-text">21</p>
+                                    <p class="card-text" id="confirmedBookingsCount">0</p>
                                     <p class="card-text-small">Confirmed this month</p>
                                 </div>
                             </div>
@@ -101,7 +98,7 @@
                                     <div class="card-title stat-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
                                     </div>          
-                                    <p class="card-text">3</p>
+                                    <p class="card-text" id="upcomingBookingsCount">0</p>
                                     <p class="card-text-small">Upcoming this week</p>
                                 </div>
                             </div>
@@ -111,23 +108,23 @@
                 <div class="filter-row d-flex ">
                     <button class="filter-pill is-active">
                         All 
-                        <span class="count">48</span>
+                        <span class="count" id="countAll">0</span>
                     </button>
                     <button class="filter-pill">
                         Pending 
-                        <span class="count">12</span>
+                        <span class="count" id="countPending">0</span>
                     </button>
                     <button class="filter-pill">
                         Confirmed 
-                        <span class="count">21</span>
+                        <span class="count" id="countConfirmed">0</span>
                     </button>
                     <button class="filter-pill">
                         Completed 
-                        <span class="count">11</span>
+                        <span class="count" id="countCompleted">0</span>
                     </button>
                     <button class="filter-pill">
                         Cancelled 
-                        <span class="count">4</span>
+                        <span class="count" id="countCancelled">0</span>
                     </button>
       
                 </div>
@@ -146,65 +143,70 @@
                     <th></th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td class="client-cell"><strong>Amaka Obi</strong><span>amaka.obi@email.com</span></td>
-                    <td>Wedding</td>
-                    <td>Aug 15, 2026</td>
-                    <td>180</td>
-                    <td><span class="badge badge-pending">Pending</span></td>
-                    <td class="muted-cell">2 days ago</td>
-                    <td><a href="#" class="row-action">View →</a></td>
-                </tr>
-                <tr>
-                    <td class="client-cell"><strong>Tunde Fashola</strong><span>tunde.f@corptech.com</span></td>
-                    <td>Corporate</td>
-                    <td>Jul 22, 2026</td>
-                    <td>60</td>
-                    <td><span class="badge badge-confirmed">Confirmed</span></td>
-                    <td class="muted-cell">5 days ago</td>
-                    <td><a href="#" class="row-action">View →</a></td>
-                </tr>
-                <tr>
-                    <td class="client-cell"><strong>Ijeoma Bassey</strong><span>ijeoma.b@email.com</span></td>
-                    <td>Birthday</td>
-                    <td>Jul 10, 2026</td>
-                    <td>40</td>
-                    <td><span class="badge badge-confirmed">Confirmed</span></td>
-                    <td class="muted-cell">1 week ago</td>
-                    <td><a href="#" class="row-action">View →</a></td>
-                </tr>
-                <tr>
-                    <td class="client-cell"><strong>Chidi Okafor</strong><span>chidi.okafor@email.com</span></td>
-                    <td>Catering Only</td>
-                    <td>Sep 3, 2026</td>
-                    <td>100</td>
-                    <td><span class="badge badge-pending">Pending</span></td>
-                    <td class="muted-cell">Yesterday</td>
-                    <td><a href="#" class="row-action">View →</a></td>
-                </tr>
-                <tr>
-                    <td class="client-cell"><strong>Funmi Adeyemi</strong><span>funmi.a@email.com</span></td>
-                    <td>Wedding</td>
-                    <td>Jun 28, 2026</td>
-                    <td>220</td>
-                    <td><span class="badge badge-completed">Completed</span></td>
-                    <td class="muted-cell">3 weeks ago</td>
-                    <td><a href="#" class="row-action">View →</a></td>
-                </tr>
-                <tr>
-                    <td class="client-cell"><strong>Emeka Nwosu</strong><span>emeka.n@email.com</span></td>
-                    <td>Corporate</td>
-                    <td>Jul 30, 2026</td>
-                    <td>35</td>
-                    <td><span class="badge badge-cancelled">Cancelled</span></td>
-                    <td class="muted-cell">4 days ago</td>
-                    <td><a href="#" class="row-action">View →</a></td>
-                </tr>
+                <tbody id="bookingsTableBody">
+                  <tr>
+                    <td colspan="7" class="text-center py-5 text-muted">Loading bookings...</td>
+                  </tr>
                 </tbody>
             </table>
           </div>
         </main>
+        <!-- Details Panel -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="detailsPanel" aria-labelledby="detailsPanelLabel">
+          <div class="offcanvas-header d-flex flex-column align-items-start border-bottom">
+            <div class="offcanvas-title-container d-flex justify-content-between align-items-center w-100">
+                <h5 class="offcanvas-title" id="detailsPanelLabel">Order Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-client">
+                <h3 class="offcanvas-client-name">Booking name</h3>
+                <span class="badge detail-status-badge badge-pending">Pending</span>
+            </div>
+          </div>
+
+          <div class="offcanvas-body">
+            <div class="detail-group">
+                <h5>Contact</h5>
+                <div class="detail-row"><span>Email</span><span class="detail-email">email@example.com</span></div>
+                <div class="detail-row"><span>Phone</span><span class="detail-phone">—</span></div>
+            </div>
+            <div class="detail-group">
+                <h5>Event Details</h5>
+                <div class="detail-row"><span>Type</span><span class="detail-type">Event type</span></div>
+                <div class="detail-row"><span>Date</span><span class="detail-date">Event date</span></div>
+                <div class="detail-row"><span>Guests</span><span class="detail-guests">Guests</span></div>
+                <div class="detail-row"><span>Venue</span><span class="detail-venue">Venue</span></div>
+            </div>
+            <div class="detail-group">
+                <h5>Preferences</h5>
+                <div class="detail-row"><span>Package</span><span class="detail-package">Package</span></div>
+                <div class="detail-row"><span>Budget</span><span class="detail-budget">Budget</span></div>
+            </div>
+            <div class="detail-group">
+                <h5>Message</h5>
+                <p class="detail-message">No message provided.</p>
+            </div>
+            <div class="detail-group">
+                <h5>Manage</h5>
+                <div class="detail-field">
+                    <label for="status-select">Status</label>
+                    <select id="status-select">
+                        <option>Pending</option>
+                        <option>Confirmed</option>
+                        <option>Completed</option>
+                        <option>Cancelled</option>
+                    </select>
+                </div>
+                <div class="detail-field">
+                    <label for="internal-notes">Internal notes</label>
+                    <textarea id="internal-notes" placeholder="Add a note about this booking..."></textarea>
+                </div>
+            </div>
+            <div class="detail-footer">
+                <button type="button" class="btn btn-ghost" data-bs-dismiss="offcanvas">Close</button>
+                <button type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
       </div>
     </div>
     
@@ -216,5 +218,6 @@
 
     <script src="js/config.js"></script>
     <script src="js/firebase-init.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>

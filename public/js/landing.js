@@ -16,7 +16,7 @@ function initializeYear() {
   }
 }
 
-// STICKY NAV SHADOW ON SCROLL
+//STICKY NAV SHADOW ON SCROLL
 function initializeStickyNav() {
   const nav = document.getElementById('siteNav');
   if (!nav) return;

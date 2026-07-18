@@ -13,8 +13,8 @@
 </head>
 <body>
   <header class="" id="siteNav">
-  <nav class="nav navbar-expand-lg fixed-top nav-inner">
-    <a href="#top" class="logo">FAB<span>TO</span></a>
+  <nav class="nav navbar-expand-lg fixed-top py-3 px-5">
+    <a href="index.html" class="logo">FAB<span>TO</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -165,7 +165,11 @@
               </div>
 
               <div class="form-footer text-center">
-                <button type="submit" class="btn btn-primary btn-lg w-100 submit-btn">Request Booking &#8594;</button>
+                <button type="submit" class="btn btn-primary btn-lg w-100 submit-btn"> 
+                  <div class="spinner-border d-none" role="status" id="btnSpinner">
+                    <span class="visually-hidden">Submitting...</span>
+                  </div>Request Booking &#8594;
+                </button>
                 <p class="form-note">This submits a request, not a confirmed booking. We'll follow up by email or phone to confirm availability and finalize details.</p>
               </div>
             </form>

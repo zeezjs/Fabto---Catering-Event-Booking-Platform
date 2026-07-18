@@ -15,6 +15,7 @@
   --ink: #3B2A1E;
   --muted: #6E5C4B;
   --muted-on-gold: #4A3018;
+  --grey: rgba(255, 255, 255, 0.45);
   --line: rgba(92, 48, 24, 0.14);
   --shadow-sm: 0 8px 20px -12px rgba(74, 42, 22, 0.35);
   --shadow-md: 0 24px 48px -20px rgba(62, 35, 18, 0.38);
@@ -213,9 +214,6 @@ section {
 
 /* Nav */
 .nav {
-  position: sticky;
-  top: 0;
-  z-index: 100;
   background: rgba(250, 246, 238, 0.9);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid transparent;
@@ -225,15 +223,6 @@ section {
 .nav.is-scrolled {
   box-shadow: 0 6px 24px -14px rgba(62, 35, 18, 0.35);
   border-color: var(--line);
-}
-
-.nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 24px;
-  max-width: 1240px;
-  margin: 0 auto;
 }
 
 .logo {
@@ -283,28 +272,6 @@ section {
   gap: 18px;
 }
 
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  padding: 6px;
-  background: none;
-  border: none;
-}
-
-.nav-toggle span {
-  width: 24px;
-  height: 2.5px;
-  background: var(--rust);
-  border-radius: 2px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-  display: block;
-}
-
-.mobile-panel {
-  display: none;
-}
-
 @media (max-width: 900px) {
   .nav-inner {
     flex-wrap: wrap;
@@ -312,7 +279,7 @@ section {
     gap: 12px;
   }
 
-  .nav-links {
+  /* .nav-links {
     display: none;
   }
 
@@ -322,7 +289,7 @@ section {
 
   .navbar-toggler {
     order: 3;
-  }
+  } */
 
   .mobile-panel {
     display: block;

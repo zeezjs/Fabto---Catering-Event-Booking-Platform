@@ -107,6 +107,11 @@
   box-shadow: none !important;
 }
 
+input.form-control::placeholder{
+  color: var(--muted);
+  font-weight: lighter;
+}
+
 .form-control:focus {
   border-color: var(--terracotta) !important;
   box-shadow: 0 0 0 4px rgba(139, 66, 34, 0.12) !important;

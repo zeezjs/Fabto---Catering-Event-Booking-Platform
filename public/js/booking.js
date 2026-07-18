@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const lastBookingTime = localStorage.getItem('lastBookingTime');
     const now = Date.now();
     
-    if (lastBookingTime && (now - parseInt(lastBookingTime)) < BOOKING_COOLDOWN) {
-        const remainingSeconds = Math.ceil((BOOKING_COOLDOWN - (now - parseInt(lastBookingTime))) / 1000);
+    if (lastBookingTime && (now - parseInt(lastBookingTime, 10)) < BOOKING_COOLDOWN) {
+        const remainingSeconds = Math.ceil((BOOKING_COOLDOWN - (now - parseInt(lastBookingTime, 10))) / 1000);
         alert(`Please wait ${remainingSeconds} seconds before submitting another booking.`);
         // Disable the form or show a message
         document.getElementById('submitBtn').disabled = true;
@@ -71,16 +71,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // 5. Show loading state
-        // submitBtn.disabled = true;
-        // btnText.textContent = 'Submitting...';
-        // btnSpinner.classList.remove('d-none');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+        btnSpinner.classList.remove('d-none');
 
         try {
             // 6. Save to Firestore
             console.log('📦 Data being sent:', formData);
             const docRef = await db.collection('bookings').add(formData);
-            
             console.log('✅ Booking saved with ID:', docRef.id);
+            form.reset();
             
             // 7. Show success message
             // form.classList.add('d-none');
@@ -98,11 +98,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Oops! Something went wrong. Please try again later.');
             }
                 } 
-        // finally {
-        //     // 9. Reset button state
-        //     submitBtn.disabled = false;
-        //     btnText.textContent = '📩 Submit Booking Request';
-        //     btnSpinner.classList.add('d-none');
-        // }
+        finally {
+            // 9. Reset button state
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Request Booking';
+            btnSpinner.classList.add('d-none');
+        }
     });
 });

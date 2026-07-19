@@ -15,12 +15,12 @@
     
     <div class="container-fluid">
       <div class="row">
-        <aside id="sidebarMenu" class="col-md-3 col-lg-2 d-md-flex flex-column sidebar collapse nav-aside-left position-fixed top-0 start-0 bottom-0">
-            <div class=" admin-profile">
+        <aside id="sidebarMenu" class="col-12 col-md-3 col-lg-2 sidebar nav-aside-left d-flex flex-column position-md-sticky top-0 vh-100 overflow-auto">
+            <div class="admin-profile p-3">
                 <h5 class="logo">FAB<span>TO</span></h5> 
                 <p class="admin-profile-name sidebar-label">ADMIN</p>
             </div>
-          <div class="position-sticky pt-3 sidebar-sticky sidebar-section">
+          <div class="pt-3 sidebar-section">
             <p class="sidebar-section-label sidebar-label">MAIN</p>
             <div class="flex-column sidebar-nav">
                 <button class="active" href="#">
@@ -40,7 +40,7 @@
           </div>
         </aside>
                             <!-- Main Section -->
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <main class="col-12 col-md-9 col-lg-10 px-3 px-md-4">
           
             <header class="topbar">
                 <h1>Bookings</h1>
@@ -57,10 +57,9 @@
             </header>
             
             <div class="main-content mt-4">
-                <div class="container-fluid stats-row mb-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card stats-row-card">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 mb-4">
+                        <div class="col">
+                            <div class="card stats-row-card h-100">
                                 <div class="card-body">         
                                     <div class="card-title stat-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
@@ -70,8 +69,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card stats-row-card">
+                        <div class="col">
+                            <div class="card stats-row-card h-100">
                                 <div class="card-body">         
                                     <div class="card-title stat-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
@@ -81,8 +80,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card stats-row-card">
+                        <div class="col">
+                            <div class="card stats-row-card h-100">
                                 <div class="card-body">         
                                     <div class="card-title stat-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
@@ -92,8 +91,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card stats-row-card">
+                        <div class="col">
+                            <div class="card stats-row-card h-100">
                                 <div class="card-body">         
                                     <div class="card-title stat-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
@@ -105,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="filter-row d-flex ">
+                <div class="filter-row d-flex flex-column flex-sm-row flex-wrap gap-2">
                     <button class="filter-pill is-active">
                         All 
                         <span class="count" id="countAll">0</span>
@@ -131,7 +130,8 @@
             </div>
             
           <div class="table-scroll mb-5">
-            <table class="tabl table-hover">
+            <div class="table-responsive">
+              <table class="table table-hover tabl mb-0">
                 <thead>
                 <tr class="table-heading">
                     <th>Client</th>

@@ -88,7 +88,8 @@ h5.logo span{
 	border: 1.5px solid var(--line);
 	border-radius: 100px;
 	padding: 10px 16px;
-	min-width: 230px;
+	min-width: 0;
+	flex: 1 1 240px;
 }
 .search-box svg {
 	width: 16px;
@@ -111,7 +112,7 @@ h5.logo span{
 }
 /* stats */
 .stats-row-card{
-    width: 245px;
+    width: 100%;
     border: 1px solid var(--line);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
@@ -173,8 +174,18 @@ h5.logo span{
 table {
 	width: 100%;
 	border-collapse: collapse;
-	min-width: 840px;
 	background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+	table thead th {
+		font-size: 0.68rem;
+		padding: 12px 14px;
+	}
+
+	tbody td {
+		padding: 12px 14px;
+	}
 }
 .table-heading{
 	background-color: var(--cream);
@@ -204,6 +215,17 @@ tbody td {
 	display: block;
 	font-size: 0.9rem;
 	color: var(--ink);
+}
+
+.offcanvas.offcanvas-end {
+	width: 100%;
+	max-width: 420px;
+}
+
+@media (max-width: 767.98px) {
+	.offcanvas.offcanvas-end {
+		max-width: 100%;
+	}
 }
 .client-cell span {
 	display: block;

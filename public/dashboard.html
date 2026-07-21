@@ -15,54 +15,52 @@
     
     <div class="container-fluid">
       <div class="row">
-        <aside id="sidebarMenu" class="col-md-3 col-lg-2 d-md-flex flex-column sidebar collapse nav-aside-left position-fixed top-0 start-0 bottom-0">
-            <div class=" admin-profile">
-                <h5 class="logo">FAB<span>TO</span></h5> 
-                <p class="admin-profile-name sidebar-label">ADMIN</p>
+        <aside id="sidebarMenu" class="col-md-3 col-lg-2 d-flex sidebar nav-aside-left">
+            <div class="admin-profile">
+                <h5 class="logo mb-0">FAB<span>TO</span></h5> 
+                <p class="admin-profile-name sidebar-label ">ADMIN</p>
             </div>
-          <div class="position-sticky pt-3 sidebar-sticky sidebar-section">
-            <p class="sidebar-section-label sidebar-label">MAIN</p>
-            <div class="flex-column sidebar-nav">
-                <button class="active" href="#">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4M16 3v4"/></svg>
-                Bookings
-                </button>
+            <div class="position-sticky pt-md-3 sidebar-sticky sidebar-section">
+                <p class="sidebar-section-label sidebar-label">MAIN</p>
+                <div class="flex-column sidebar-nav">
+                    <button class="active" href="#">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4M16 3v4"/></svg>
+                    <span class="d-none d-md-inline-block">Bookings</span> 
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="sidebar-foot mt-auto d-flex gap-3 text-white p-2">
-            <div class="sidebar-avatar d-flex align-items-center justify-content-center">
-                <span class="sidebar-avatar-profile d-flex align-items-center justify-content-center">FA</span>
+            <div class="sidebar-foot mt-auto d-flex gap-3 text-white p-2">
+                <div class="sidebar-avatar d-flex align-items-center justify-content-center">
+                    <span class="sidebar-avatar-profile d-flex align-items-center justify-content-center">FA</span>
+                </div>
+                <div class="sidebar-user">
+                    <strong class="sidebar-user-name d-none d-md-inline-block">Fabto Admin</strong>
+                    <span class="d-none d-md-inline-block">hello@fabtoevents.ng</span>
+                </div>
             </div>
-            <div class="sidebar-user">
-                <strong>Fabto Admin</strong>
-                <span>hello@fabtoevents.ng</span>
-            </div>
-          </div>
         </aside>
-                            <!-- Main Section -->
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-          
+        <!-- Main Section -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-0">
             <header class="topbar">
                 <h1>Bookings</h1>
                 <div class="topbar-actions">
                     <div class="search-box">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
-                    <input type="text" placeholder="Search by name or email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                        <input type="text" placeholder="Search by name or email">
                     </div>
                     <button class="btn btn-primary">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>
-                    Add Booking
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>
+                        Add Booking
                     </button>
                 </div>
             </header>
-            
-            <div class="main-content mt-4">
-                <div class="container-fluid stats-row mb-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card stats-row-card">
+            <div class="main-content mt-4 mx-4 d-flex justify-content-center align-items-center">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 mb-4 justify-content-center align-items-center">
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="col">
+                            <div class="card stats-row-card h-100">
                                 <div class="card-body">         
-                                    <div class="card-title stat-icon">
+                                    <div class="card-title stat-icon ">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
                                     </div>          
                                     <p class="card-text" id="totalBookingsCount">0</p>
@@ -70,8 +68,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card stats-row-card">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="col">
+                            <div class="card stats-row-card h-100">
                                 <div class="card-body">         
                                     <div class="card-title stat-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
@@ -81,10 +81,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card stats-row-card">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="col">
+                            <div class="card stats-row-card h-100">
                                 <div class="card-body">         
-                                    <div class="card-title stat-icon">
+                                    <div class="card-title stat-icon ">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
                                     </div>          
                                     <p class="card-text" id="confirmedBookingsCount">0</p>
@@ -92,10 +94,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card stats-row-card">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="col">
+                            <div class="card stats-row-card h-100">
                                 <div class="card-body">         
-                                    <div class="card-title stat-icon">
+                                    <div class="card-title stat-icon ">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path></svg>
                                     </div>          
                                     <p class="card-text" id="upcomingBookingsCount">0</p>
@@ -105,109 +109,112 @@
                         </div>
                     </div>
                 </div>
-                <div class="filter-row d-flex ">
-                    <button class="filter-pill is-active">
-                        All 
-                        <span class="count" id="countAll">0</span>
-                    </button>
-                    <button class="filter-pill">
-                        Pending 
-                        <span class="count" id="countPending">0</span>
-                    </button>
-                    <button class="filter-pill">
-                        Confirmed 
-                        <span class="count" id="countConfirmed">0</span>
-                    </button>
-                    <button class="filter-pill">
-                        Completed 
-                        <span class="count" id="countCompleted">0</span>
-                    </button>
-                    <button class="filter-pill">
-                        Cancelled 
-                        <span class="count" id="countCancelled">0</span>
-                    </button>
-      
+                
+            </div>
+            <div class="filter-row d-flex flex-wrap  gap-2 px-4">
+                <button class="filter-pill is-active">
+                    All 
+                    <span class="count" id="countAll">0</span>
+                </button>
+                <button class="filter-pill">
+                    Pending 
+                    <span class="count" id="countPending">0</span>
+                </button>
+                <button class="filter-pill">
+                    Confirmed 
+                    <span class="count" id="countConfirmed">0</span>
+                </button>
+                <button class="filter-pill">
+                    Completed 
+                    <span class="count" id="countCompleted">0</span>
+                </button>
+                <button class="filter-pill">
+                    Cancelled 
+                    <span class="count" id="countCancelled">0</span>
+                </button>
+            </div>
+            <!-- Table -->
+            <div class="table-card mx-4 mb-4">
+                <div class="table-scroll">
+                    <table class="table-hover">
+                        <thead>
+                        <tr class="table-heading">
+                            <th>Client</th>
+                            <th>Event Type</th>
+                            <th>Event Date</th>
+                            <th>Guests</th>
+                            <th>Status</th>
+                            <th>Submitted</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody id="bookingsTableBody">
+                            <tr>
+                                <td colspan="7" class="text-center py-5 text-muted">Loading bookings...</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            
-          <div class="table-scroll mb-5">
-            <table class="tabl table-hover">
-                <thead>
-                <tr class="table-heading">
-                    <th>Client</th>
-                    <th>Event Type</th>
-                    <th>Event Date</th>
-                    <th>Guests</th>
-                    <th>Status</th>
-                    <th>Submitted</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody id="bookingsTableBody">
-                  <tr>
-                    <td colspan="7" class="text-center py-5 text-muted">Loading bookings...</td>
-                  </tr>
-                </tbody>
-            </table>
-          </div>
         </main>
-        <!-- Details Panel -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="detailsPanel" aria-labelledby="detailsPanelLabel">
-          <div class="offcanvas-header d-flex flex-column align-items-start border-bottom">
-            <div class="offcanvas-title-container d-flex justify-content-between align-items-center w-100">
-                <h5 class="offcanvas-title" id="detailsPanelLabel">Order Details</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-client">
-                <h3 class="offcanvas-client-name">Booking name</h3>
-                <span class="badge detail-status-badge badge-pending">Pending</span>
-            </div>
-          </div>
+            <!-- Details Panel -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="detailsPanel" aria-labelledby="detailsPanelLabel">
+                <div class="offcanvas-header d-flex flex-column align-items-start border-bottom">
+                    <div class="offcanvas-title-container d-flex justify-content-between align-items-center w-100">
+                        <h5 class="offcanvas-title" id="detailsPanelLabel">Order Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-client">
+                        <h3 class="offcanvas-client-name">Booking name</h3>
+                        <span class="badge detail-status-badge badge-pending">Pending</span>
+                    </div>
+                </div>
 
-          <div class="offcanvas-body">
-            <div class="detail-group">
-                <h5>Contact</h5>
-                <div class="detail-row"><span>Email</span><span class="detail-email">email@example.com</span></div>
-                <div class="detail-row"><span>Phone</span><span class="detail-phone">—</span></div>
-            </div>
-            <div class="detail-group">
-                <h5>Event Details</h5>
-                <div class="detail-row"><span>Type</span><span class="detail-type">Event type</span></div>
-                <div class="detail-row"><span>Date</span><span class="detail-date">Event date</span></div>
-                <div class="detail-row"><span>Guests</span><span class="detail-guests">Guests</span></div>
-                <div class="detail-row"><span>Venue</span><span class="detail-venue">Venue</span></div>
-            </div>
-            <div class="detail-group">
-                <h5>Preferences</h5>
-                <div class="detail-row"><span>Package</span><span class="detail-package">Package</span></div>
-                <div class="detail-row"><span>Budget</span><span class="detail-budget">Budget</span></div>
-            </div>
-            <div class="detail-group">
-                <h5>Message</h5>
-                <p class="detail-message">No message provided.</p>
-            </div>
-            <div class="detail-group">
-                <h5>Manage</h5>
-                <div class="detail-field">
-                    <label for="status-select">Status</label>
-                    <select id="status-select">
-                        <option>Pending</option>
-                        <option>Confirmed</option>
-                        <option>Completed</option>
-                        <option>Cancelled</option>
-                    </select>
+                <div class="offcanvas-body">
+                    <div class="detail-group">
+                        <h5>Contact</h5>
+                        <div class="detail-row"><span>Email</span><span class="detail-email">email@example.com</span></div>
+                        <div class="detail-row"><span>Phone</span><span class="detail-phone">—</span></div>
+                    </div>
+                    <div class="detail-group">
+                        <h5>Event Details</h5>
+                        <div class="detail-row"><span>Type</span><span class="detail-type">Event type</span></div>
+                        <div class="detail-row"><span>Date</span><span class="detail-date">Event date</span></div>
+                        <div class="detail-row"><span>Guests</span><span class="detail-guests">Guests</span></div>
+                        <div class="detail-row"><span>Venue</span><span class="detail-venue">Venue</span></div>
+                    </div>
+                    <div class="detail-group">
+                        <h5>Preferences</h5>
+                        <div class="detail-row"><span>Package</span><span class="detail-package">Package</span></div>
+                        <div class="detail-row"><span>Budget</span><span class="detail-budget">Budget</span></div>
+                    </div>
+                    <div class="detail-group">
+                        <h5>Message</h5>
+                        <p class="detail-message">No message provided.</p>
+                    </div>
+                    <div class="detail-group">
+                        <h5>Manage</h5>
+                        <div class="detail-field">
+                            <label for="status-select">Status</label>
+                            <select id="status-select">
+                                <option>Pending</option>
+                                <option>Confirmed</option>
+                                <option>Completed</option>
+                                <option>Cancelled</option>
+                            </select>
+                        </div>
+                        <div class="detail-field">
+                            <label for="internal-notes">Internal notes</label>
+                            <textarea id="internal-notes" placeholder="Add a note about this booking..."></textarea>
+                        </div>
+                    </div>
+                    <div class="detail-footer">
+                        <button type="button" class="btn btn-ghost" data-bs-dismiss="offcanvas">Close</button>
+                        <button type="button" class="btn btn-primary">Save Changes</button>
+                    </div>
                 </div>
-                <div class="detail-field">
-                    <label for="internal-notes">Internal notes</label>
-                    <textarea id="internal-notes" placeholder="Add a note about this booking..."></textarea>
-                </div>
-            </div>
-            <div class="detail-footer">
-                <button type="button" class="btn btn-ghost" data-bs-dismiss="offcanvas">Close</button>
-                <button type="button" class="btn btn-primary">Save Changes</button>
             </div>
         </div>
-      </div>
     </div>
     
     <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>

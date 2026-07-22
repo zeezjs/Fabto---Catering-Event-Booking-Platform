@@ -12,7 +12,7 @@ The platform allows potential clients to explore services, check availability, a
 
 > **Purpose:** This was built as a portfolio project to demonstrate proficiency in vanilla JavaScript architecture, serverless backends, and secure database design, with the real-world goal of helping a family business digitize their booking process.
 
-**Live Demo:** [Not yet deployed]
+**Live Demo:** https://fabto-83327.web.app
 
 ---
 

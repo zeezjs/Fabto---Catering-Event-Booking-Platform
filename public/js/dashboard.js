@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded', async function () {
     return
   }
 
+  auth.onAuthStateChanged((user) => {
+    if (!user) {
+      window.location.href = 'admin-login.html'
+    }
+  })
+
   const tableBody = document.getElementById('bookingsTableBody')
   const countAll = document.getElementById('countAll')
   const countPending = document.getElementById('countPending')
@@ -17,6 +23,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   const statusSelect = detailPanel.querySelector('#status-select')
   const internalNotesTextarea = detailPanel.querySelector('#internal-notes')
   const saveChangesButton = detailPanel.querySelector('.detail-footer .btn-primary')
+  const logoutButton = document.getElementById('logoutButton')
 
   let allBookings = []
   let selectedBookingId = null
@@ -62,7 +69,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     tableBody.innerHTML = ''
 
     if (!bookings.length) {
-      tableBody.innerHTML = '<tr><td colspan="7" class="text-center py-5 text-muted">No bookings match your search.</td></tr>'
+      tableBody.innerHTML = '<tr><td colspan="7" class="text-center py-5 text-muted">No bookings have been sent.</td></tr>'
       return
     }
 
@@ -215,6 +222,16 @@ document.addEventListener('DOMContentLoaded', async function () {
     } catch (error) {
       console.error('Unable to save booking changes:', error)
       alert('Unable to save changes. Please try again.')
+    }
+  })
+
+  logoutButton.addEventListener('click', async function () {
+    try {
+      await auth.signOut()
+      window.location.href = 'admin-login.html'
+    } catch (error) {
+      console.error('Logout failed:', error)
+      alert('Unable to log out. Please try again.')
     }
   })
 

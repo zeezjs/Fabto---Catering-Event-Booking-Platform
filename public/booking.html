@@ -165,10 +165,11 @@
               </div>
 
               <div class="form-footer text-center">
-                <button type="submit" class="btn btn-primary btn-lg w-100 submit-btn"> 
-                  <div class="spinner-border d-none" role="status" id="btnSpinner">
+                <button type="submit" class="btn btn-primary btn-lg w-100 submit-btn">
+                  <span class="button-text">Request Booking &#8594;</span>
+                  <div class="spinner-border spinner-border-sm d-none ms-2" role="status" id="btnSpinner">
                     <span class="visually-hidden">Submitting...</span>
-                  </div>Request Booking &#8594;
+                  </div>
                 </button>
                 <p class="form-note">This submits a request, not a confirmed booking. We'll follow up by email or phone to confirm availability and finalize details.</p>
               </div>
@@ -178,6 +179,23 @@
       </div>
     </div>
   </section>
+
+  <div class="modal fade" id="bookingConflictModal" tabindex="-1" aria-labelledby="bookingConflictModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingConflictModalLabel">Date unavailable</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Sorry, this date has been booked already. Please choose another preferred date or contact us for availability.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="container footer-top">
@@ -225,6 +243,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
   <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script>

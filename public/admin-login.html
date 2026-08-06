@@ -48,7 +48,7 @@
           <h2 class="mb-3">Admin Login</h2>
           <p class="sub mb-4">Sign in to manage your bookings.</p>
 
-          <form>
+          <form class='login-form'>
             <div class="mb-4">
               <label for="lg-email" class="form-label">Email address</label>
               <input type="email" id="lg-email" name="email" class="form-control" placeholder="you@fabtoevents.ng" required>
@@ -64,7 +64,12 @@
               </label>
               <a href="#" class="forgot-link">Forgot password?</a>
             </div>
-            <a href="dashboard.html" class="btn btn-primary w-100">Sign In</a>
+            <button id="login-button" type="submit" class="btn btn-primary w-100 login-button">
+              <span> Sign In </span>
+              <span class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+            </button>
+            <div id="error-message" class="alert alert-danger error-message d-none mt-3 mb-0" role="alert" aria-live="polite"></div>
+            <!-- <a href="dashboard.html" class="btn btn-primary w-100">Sign In</a> -->
           </form>
           <p class="login-footnote mt-4 text-center">This dashboard is for Fabto staff only.</p>
         </div>
@@ -78,5 +83,6 @@
 
   <script src="js/config.js"></script>
   <script src="js/firebase-init.js"></script>
+  <script src="js/admin.js"></script>
 </body>
 </html>
